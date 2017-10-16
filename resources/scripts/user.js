@@ -26,10 +26,10 @@ $(document).ready(function () {
     function success(data) {
         var list = "";
         var person = data;
-        list += "<li>" + person.firstname + "</li>";
-        list += "<li>" + person.lastname + "</li>";
-        list += "<li>" + person.age + "</li>";
-        list += "<li>" + person.nationality + "</li>";
+        list += "<li class='list-group-item'>" + person.firstname + "</li>";
+        list += "<li class='list-group-item'>" + person.lastname + "</li>";
+        list += "<li class='list-group-item'>" + person.age + "</li>";
+        list += "<li class='list-group-item'>" + person.nationality + "</li>";
         $("#user").html(list);
     }
 });

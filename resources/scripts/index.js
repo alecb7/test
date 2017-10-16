@@ -24,7 +24,7 @@ $(document).ready(function () {
         var list = "";
         console.log(data);
         data._embedded.people.forEach(person => {
-            list += "<li><a href='/demo/test/user.html?id=" + person.id + "'>" + person.firstname + " " + person.lastname + "</a></li>";
+            list += "<li class='list-group-item'><a href='/demo/test/user.html?id=" + person.id + "'>" + person.firstname + " " + person.lastname + "</a></li>";
         }, this);
         $("#names").html(list);
     }
