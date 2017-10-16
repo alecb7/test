@@ -21,9 +21,10 @@ $(document).ready(function () {
     // ]
 
     function success(data){
-        var list = ""
-        array.forEach(person => {
-            list += "<li><a href='" + person.href + "'>" + person.firstName + " " + person.lastName + "</a></li>";
+        var list = "";
+        console.log(data);
+        data._embedded.people.forEach(person => {
+            list += "<li><a href='/demo/test/user.html?id=" + data._embedded.people.indexOf() + "'>" + person.firstname + " " + person.lastname + "</a></li>";
         }, this);
         $("#names").html(list);
     }
