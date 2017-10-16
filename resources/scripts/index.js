@@ -3,11 +3,28 @@ $(document).ready(function () {
     //     console.log(result);
     // }});
     $.ajax({
-        url: 'https://randomuser.me/api/',
+        url: 'http://localhost:8080/people',
         dataType: 'json',
         success: function (data) {
-            console.log(data);
+            success(data);
         }
     });
+    // var array = [
+    //     {
+    //         firstName: "Steve",
+    //         lastName: "Jobs"
+    //     },
+    //     {
+    //         firstName: "Dave",
+    //         lastName: "Bloggs"
+    //     }
+    // ]
 
+    function success(data){
+        var list = ""
+        array.forEach(person => {
+            list += "<li><a href='" + person.href + "'>" + person.firstName + " " + person.lastName + "</a></li>";
+        }, this);
+        $("#names").html(list);
+    }
 });
