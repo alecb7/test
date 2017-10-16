@@ -1,0 +1,16 @@
+{
+    "users": [
+        {
+            "first_name": "Steve",
+            "last_name": "Jobs",
+            "nationality": "Yankee",
+            "age": "50"
+        },
+        {
+            "first_name": "Dave",
+            "last_name": "Bloggs",
+            "nationality": "Australian",
+            "age": "20"
+        }
+    ]
+}
