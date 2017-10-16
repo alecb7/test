@@ -30,6 +30,6 @@ $(document).ready(function () {
         list += "<li>" + person.lastName + "</li>";
         list += "<li>" + person.age + "</li>";
         list += "<li>" + person.nationality + "</li>";
-        $("#names").html(list);
+        $("#user").html(list);
     }
 });
