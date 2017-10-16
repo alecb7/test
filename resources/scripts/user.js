@@ -26,8 +26,8 @@ $(document).ready(function () {
     function success(data) {
         var list = "";
         var person = data;
-        list += "<li>" + person.firstName + "</li>";
-        list += "<li>" + person.lastName + "</li>";
+        list += "<li>" + person.firstname + "</li>";
+        list += "<li>" + person.lastname + "</li>";
         list += "<li>" + person.age + "</li>";
         list += "<li>" + person.nationality + "</li>";
         $("#user").html(list);
