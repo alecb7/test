@@ -9,16 +9,7 @@ $(document).ready(function () {
             success(data);
         }
     });
-    // var array = [
-    //     {
-    //         firstName: "Steve",
-    //         lastName: "Jobs"
-    //     },
-    //     {
-    //         firstName: "Dave",
-    //         lastName: "Bloggs"
-    //     }
-    // ]
+    
 
     function success(data){
         var list = "";

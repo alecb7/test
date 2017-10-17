@@ -1,5 +1,14 @@
 
 $(document).ready(function () {
+
+    $.ajax({
+        url: 'http://localhost:8080/people/' + getQueryString(),
+        dataType: 'json',
+        success: function (data) {
+            success(data);
+        }
+    });
+
     function getQueryString() {
         var qsParm = new Array();
         var query = window.location.search.substring(1);
@@ -13,15 +22,7 @@ $(document).ready(function () {
             }
         }
         return qsParm['id'];
-    }
-
-    $.ajax({
-        url: 'http://localhost:8080/people/' + getQueryString(),
-        dataType: 'json',
-        success: function (data) {
-            success(data);
-        }
-    });
+    }    
 
     function success(data) {
         var list = "";

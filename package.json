@@ -1,0 +1,9 @@
+{
+    "scripts": {
+        "test": "jest"
+    },
+    "dependencies": {
+        "fs": "0.0.1-security",
+        "jquery": "^3.2.1"
+    }
+}
